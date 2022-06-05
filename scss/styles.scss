@@ -1,0 +1,100 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+//--------------------------------------------------------------------------HEADER-------------------------------------------------------------------
+header{
+    background-color: black;
+    h1{
+        color: black;
+    }
+    a{
+        text-decoration: none;
+    font-size: 40px;
+    color: white;
+    }
+.img-logo{
+    width: 80px;
+}
+}
+//------------------------------------------------------------------------------MAIN-----------------------------------------------------------------
+main{ 
+    background-image: url(//multimedia/imagenes/wallpaper-neon.jpg);
+    padding-top: 100px;
+    margin-bottom: 0%;
+    //-----------------------------------------------carrousel-------------------------
+    .carousel-edit {
+        height: 600px;
+      }
+      
+      @media only screen and (max-width: 991px) {
+        .carousel-edit {
+          height: auto;
+        }
+      }
+
+      //--------------------articulos-----------------------------
+      .articulos-main{
+        display: none;
+    }
+
+    @media screen and (min-width: 600px){
+        .articulos-main{
+            display: block;
+            
+    }
+    }
+
+    //------------------whatsapp-------------------------------------------------------------
+
+    .item-fixed {
+        position: fixed;
+        bottom:0;
+        right: 0;
+    }
+    
+    .item-fixed {
+        img{
+                width: 70px;
+    }
+}
+    .ul-whatsapp{
+        list-style-type: none;
+    }
+
+  
+}
+//-----------------------------------------------FOOTER---------------------------------------------------
+
+footer{
+    background-color: grey;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    list-style: none ;
+    h5{
+        color: black;
+        margin-bottom: 20px;
+    }
+    nav{
+        li{
+            a:hover{
+                background-color: rgb(56, 54, 54);
+            }
+            a{
+                text-decoration: none;
+            }
+            img{
+                width: 20px;
+            }
+        }
+    
+}
+ul{
+    li{
+        img{
+            width: 20px;
+        }
+    }
+}
+}
