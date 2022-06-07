@@ -2,11 +2,16 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+//---------------VARIABLES-----------------
+$color-negro:#070606f1;
+$color-gris:#5f5c5c;
+
+
 //--------------------------------------------------------------------------HEADER-------------------------------------------------------------------
 header{
-    background-color: black;
+    background-color: $color-negro;
     h1{
-        color: black;
+        color: $color-negro;
     }
     a{
         text-decoration: none;
@@ -67,13 +72,13 @@ main{
 //-----------------------------------------------FOOTER---------------------------------------------------
 
 footer{
-    background-color: grey;
-    background-color: grey;
+    background-color: $color-gris;
+    background-color: $color-gris;
     display: flex;
     flex-direction: column;
     list-style: none ;
     h5{
-        color: black;
+        color: $color-negro;
         margin-bottom: 20px;
     }
     nav{
