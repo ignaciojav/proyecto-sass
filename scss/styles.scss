@@ -94,11 +94,12 @@ main{
 //-----------------------------------------------FOOTER---------------------------------------------------
 
 footer{
+    
    // background-color: $color-gris;
    @include bk($color-gris);
-    display: flex;
-    flex-direction: column;
-    list-style: none ;
+    //display: flex;
+    //flex-direction: column;
+    //list-style: none ;
     h5{
         color: $color-negro;
         margin-bottom: nth($tamaños, 2);
@@ -125,4 +126,6 @@ ul{
         }
     }
 }
+
+
 }
