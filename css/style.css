@@ -1,3 +1,12 @@
+main .card-style {
+  background-color: #f1d5d3;
+  color: #131212;
+  height: 100%; }
+
+main .card-style img {
+  height: 250px;
+  object-fit: contain; }
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
@@ -8,12 +17,12 @@ header {
   header a {
     text-decoration: none;
     font-size: 40px;
-    color: white; }
+    color: #eee7e7; }
   header .img-logo {
     width: 80px; }
 
 main {
-  background-image: url(//multimedia/imagenes/wallpaper-neon.jpg);
+  background-image: url(../multimedia/imagenes/wallpaper-neon.jpg);
   padding-top: 100px;
   margin-bottom: 0%; }
   main .carousel-edit {
@@ -36,7 +45,6 @@ main {
     list-style-type: none; }
 
 footer {
-  background-color: #5f5c5c;
   background-color: #5f5c5c;
   display: flex;
   flex-direction: column;

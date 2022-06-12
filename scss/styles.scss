@@ -1,31 +1,46 @@
+@import "components/header";
+@import "components/footer";
+@import "base/colors";
+@import "base/listas";
+@import "base/extends";
+@import "base/mixins";
+@import "base/variables";
+
+
+
+
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 //---------------VARIABLES-----------------
-$color-negro:#070606f1;
-$color-gris:#5f5c5c;
-
+//$color-negro:#070606f1;
+//$color-gris:#5f5c5c;
+//$color-blanco:rgb(238, 231, 231);
+//$color-hover: rgb(56, 54, 54);
+//$color-card: rgb(241, 213, 211);
+//s$font-color:rgb(19, 18, 18);
 
 //--------------------------------------------------------------------------HEADER-------------------------------------------------------------------
 header{
-    background-color: $color-negro;
-    h1{
-        color: $color-negro;
+    @include bk($color-negro);
+   //background-color: $color-negro;
+   h1{
+       color: $color-negro;
     }
     a{
         text-decoration: none;
-    font-size: 40px;
-    color: white;
-    }
+   font-size: nth($tamaños, 4);
+   color: $color-blanco;
+   }
 .img-logo{
-    width: 80px;
+    width: nth($tamaños, 8);
 }
 }
 //------------------------------------------------------------------------------MAIN-----------------------------------------------------------------
 main{ 
-    background-image: url(//multimedia/imagenes/wallpaper-neon.jpg);
-    padding-top: 100px;
+    background-image: url(../multimedia/imagenes/wallpaper-neon.jpg);
+    padding-top: nth($tamaños, 10);
     margin-bottom: 0%;
     //-----------------------------------------------carrousel-------------------------
     .carousel-edit {
@@ -60,11 +75,18 @@ main{
     
     .item-fixed {
         img{
-                width: 70px;
+                width: nth($tamaños, 7);
     }
 }
     .ul-whatsapp{
         list-style-type: none;
+    }
+    //--------------------------------------------------------card----------------------------
+    .card-style{
+        @extend %card;
+    }
+    .card-style img{
+       @extend %card-img;
     }
 
   
@@ -72,25 +94,26 @@ main{
 //-----------------------------------------------FOOTER---------------------------------------------------
 
 footer{
-    background-color: $color-gris;
-    background-color: $color-gris;
+   // background-color: $color-gris;
+   @include bk($color-gris);
     display: flex;
     flex-direction: column;
     list-style: none ;
     h5{
         color: $color-negro;
-        margin-bottom: 20px;
+        margin-bottom: nth($tamaños, 2);
     }
     nav{
         li{
             a:hover{
-                background-color: rgb(56, 54, 54);
+                @include bk($color-hover);
+                //background-color: $color-hover;
             }
             a{
                 text-decoration: none;
             }
             img{
-                width: 20px;
+                width: nth($tamaños, 2);
             }
         }
     
@@ -98,7 +121,7 @@ footer{
 ul{
     li{
         img{
-            width: 20px;
+            width: nth($tamaños, 2);
         }
     }
 }
