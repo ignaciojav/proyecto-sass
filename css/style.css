@@ -7,6 +7,9 @@ main .card-style img {
   height: 250px;
   object-fit: contain; }
 
+.disclaimer {
+  display: none; }
+
 body {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
 
@@ -42,13 +45,11 @@ main {
   main .item-fixed img {
     width: 70px; }
   main .ul-whatsapp {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0%; }
 
 footer {
-  background-color: #5f5c5c;
-  display: flex;
-  flex-direction: column;
-  list-style: none; }
+  background-color: #5f5c5c; }
   footer h5 {
     color: #070606f1;
     margin-bottom: 20px; }

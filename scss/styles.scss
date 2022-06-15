@@ -7,7 +7,9 @@
 @import "base/variables";
 
 
-
+.disclaimer{
+    display: none;
+}
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -67,6 +69,8 @@ main{
 
     //------------------whatsapp-------------------------------------------------------------
 
+    
+
     .item-fixed {
         position: fixed;
         bottom:0;
@@ -80,6 +84,7 @@ main{
 }
     .ul-whatsapp{
         list-style-type: none;
+        margin: 0%;
     }
     //--------------------------------------------------------card----------------------------
     .card-style{
