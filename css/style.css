@@ -7,12 +7,6 @@ main .card-style img {
   height: 250px;
   object-fit: contain; }
 
-.disclaimer {
-  display: none; }
-
-body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
-
 header {
   background-color: #070606f1; }
   header h1 {
@@ -23,6 +17,47 @@ header {
     color: #eee7e7; }
   header .img-logo {
     width: 80px; }
+
+main .card-style {
+  background-color: #f1d5d3;
+  color: #131212;
+  height: 100%; }
+
+main .card-style img {
+  height: 250px;
+  object-fit: contain; }
+
+footer {
+  background-color: #5f5c5c; }
+  footer h5 {
+    color: #070606f1;
+    margin-bottom: 20px; }
+  footer nav li a:hover {
+    background-color: #383636; }
+  footer nav li a {
+    text-decoration: none; }
+  footer nav li img {
+    width: 20px; }
+  footer ul li img {
+    width: 20px; }
+
+main .card-style {
+  background-color: #f1d5d3;
+  color: #131212;
+  height: 100%; }
+
+main .card-style img {
+  height: 250px;
+  object-fit: contain; }
+
+main .card-style {
+  background-color: #f1d5d3;
+  color: #131212;
+  height: 100%; }
+
+main .card-style img {
+  height: 250px;
+  object-fit: contain; }
 
 main {
   background-image: url(../multimedia/imagenes/wallpaper-neon.jpg);
@@ -48,16 +83,8 @@ main {
     list-style-type: none;
     margin: 0%; }
 
-footer {
-  background-color: #5f5c5c; }
-  footer h5 {
-    color: #070606f1;
-    margin-bottom: 20px; }
-  footer nav li a:hover {
-    background-color: #383636; }
-  footer nav li a {
-    text-decoration: none; }
-  footer nav li img {
-    width: 20px; }
-  footer ul li img {
-    width: 20px; }
+.disclaimer {
+  display: none; }
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }

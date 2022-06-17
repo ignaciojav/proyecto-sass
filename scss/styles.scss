@@ -5,6 +5,7 @@
 @import "base/extends";
 @import "base/mixins";
 @import "base/variables";
+@import "components/main";
 
 
 .disclaimer{
@@ -24,113 +25,22 @@ body{
 //s$font-color:rgb(19, 18, 18);
 
 //--------------------------------------------------------------------------HEADER-------------------------------------------------------------------
-header{
-    @include bk($color-negro);
+//header{
+  //  @include bk($color-negro);
    //background-color: $color-negro;
-   h1{
-       color: $color-negro;
-    }
-    a{
-        text-decoration: none;
-   font-size: nth($tamaños, 4);
-   color: $color-blanco;
-   }
-.img-logo{
-    width: nth($tamaños, 8);
-}
-}
+ //  h1{
+   //    color: $color-negro;
+//    }
+ //   a{
+  //      text-decoration: none;
+  // font-size: nth($tamaños, 4);
+ //  color: $color-blanco;
+ //  }
+//.img-logo{
+   // width: nth($tamaños, 8);
+//}
+//}
 //------------------------------------------------------------------------------MAIN-----------------------------------------------------------------
-main{ 
-    background-image: url(../multimedia/imagenes/wallpaper-neon.jpg);
-    padding-top: nth($tamaños, 10);
-    margin-bottom: 0%;
-    //-----------------------------------------------carrousel-------------------------
-    .carousel-edit {
-        height: 600px;
-      }
-      
-      @media only screen and (max-width: 991px) {
-        .carousel-edit {
-          height: auto;
-        }
-      }
 
-      //--------------------articulos-----------------------------
-      .articulos-main{
-        display: none;
-    }
-
-    @media screen and (min-width: 600px){
-        .articulos-main{
-            display: block;
-            
-    }
-    }
-
-    //------------------whatsapp-------------------------------------------------------------
-
-    
-
-    .item-fixed {
-        position: fixed;
-        bottom:0;
-        right: 0;
-    }
-    
-    .item-fixed {
-        img{
-                width: nth($tamaños, 7);
-    }
-}
-    .ul-whatsapp{
-        list-style-type: none;
-        margin: 0%;
-    }
-    //--------------------------------------------------------card----------------------------
-    .card-style{
-        @extend %card;
-    }
-    .card-style img{
-       @extend %card-img;
-    }
-
-  
-}
 //-----------------------------------------------FOOTER---------------------------------------------------
 
-footer{
-    
-   // background-color: $color-gris;
-   @include bk($color-gris);
-    //display: flex;
-    //flex-direction: column;
-    //list-style: none ;
-    h5{
-        color: $color-negro;
-        margin-bottom: nth($tamaños, 2);
-    }
-    nav{
-        li{
-            a:hover{
-                @include bk($color-hover);
-                //background-color: $color-hover;
-            }
-            a{
-                text-decoration: none;
-            }
-            img{
-                width: nth($tamaños, 2);
-            }
-        }
-    
-}
-ul{
-    li{
-        img{
-            width: nth($tamaños, 2);
-        }
-    }
-}
-
-
-}
