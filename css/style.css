@@ -61,7 +61,7 @@ main .card-style img {
 
 main {
   background-image: url(../multimedia/imagenes/wallpaper-neon.jpg);
-  padding-top: 100px;
+  padding: 30px;
   margin-bottom: 0%; }
   main .carousel-edit {
     height: 600px; }
